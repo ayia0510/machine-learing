@@ -1,9 +1,6 @@
 
 import numpy as np
-import pandas as pd
 import matplotlib.pyplot as plt
-
-
 
 
 def Xi():
@@ -114,16 +111,13 @@ def pic(w):
     x = np.arange(-0.2, 0.8, 0.1)
     y = np.array((-w[0] * x) / w[1])
     plt.sca(ax)
-    plt.plot(x, y)  # gradAscent
+    plt.plot(x, y) 
     plt.xlabel('x1')
     plt.ylabel('x2')
     plt.show()
 
 
-
-
-
-
+    
 x1,x2=Xi()
 w=Ui(x1,x2)
 print(w)
